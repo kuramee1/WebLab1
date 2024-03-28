@@ -38,3 +38,16 @@ form input[type="submit"]:hover {
  cursor: pointer;
  background-color: grey;
 }
+
+.home-button {
+  background-color: grey;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.home-button:hover {
+  background-color: grey;
+}
