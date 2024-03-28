@@ -14,96 +14,99 @@ body {
   padding: 20px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+}
 
-  & h3 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
+.form-container h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-  .form-field {
-    position: relative;
-    margin-bottom: 10px;
+.form-field {
+  position: relative;
+  margin-bottom: 10px;
+}
 
-    & input[type="text"],
-    & input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-      line-height: 1.5;
+.form-field input[type="text"],
+.form-field input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
-      &:focus {
-        outline: none;
-        border: 1px solid #2ecc71;
+.form-field label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background: #fff;
+  padding: 5px;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s;
+}
 
-        ~ label {
-          color: #2ecc71;
-          font-size: 12px;
-          top: -10px;
-        }
-      }
-    }
+.form-field input[type="text"]:focus,
+.form-field input[type="password"]:focus {
+  outline: none;
+  border: 1px solid #2ecc71;
+}
 
-      & label {
-      position: absolute;
-      top: 0;
-      left: 10px;
-      background: #fff;
-      padding: 5px;
-      font-size: 16px;
-      pointer-events: none;
-      transition: 0.2s;
-    }
+.form-field input[type="text"]:focus ~ label,
+.form-field input[type="password"]:focus ~ label {
+  color: #2ecc71;
+  font-size: 12px;
+  top: -10px;
+}
 
-      & button[type="submit"] {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      background: #2ecc71;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-bottom: 10px;
-      transition: 0.2s;
-&:hover {
-        background: #27ae60;
-      }
-    }
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
 
-    .google-sign-in-button {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      background: none;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      color: #2ecc71;
-      cursor: pointer;
-      text-align: center;
-      transition: 0.2s;
+button[type="submit"]:hover {
+  background: #27ae60;
+}
 
-      &:hover {
-        background: #f1f1f1;
-      }
-    }
+.google-sign-in-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #2ecc71;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
 
-    .forgot-password-button {
-      text-align: center;
+.google-sign-in-button:hover {
+  background: #f1f1f1;
+}
 
-      & a {
-        color: #2ecc71;
-        text-decoration: none;
-        font-size: 16px;
-        transition: 0.2s;
+.forgot-password-button {
+  text-align: center;
+}
 
-        &:hover {
-          color: #27ae60;
-        }
-      }
-    }
-  }
+.forgot-password-button a {
+  color: #2ecc71;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.forgot-password-button a:hover {
+  color: #27ae60;
 }
