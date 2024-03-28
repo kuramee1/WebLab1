@@ -50,12 +50,12 @@ body {
 .form-field input[type="text"]:focus,
 .form-field input[type="password"]:focus {
   outline: none;
-  border: 1px solid #2ecc71;
+  border: 1px solid grey;
 }
 
 .form-field input[type="text"]:focus ~ label,
 .form-field input[type="password"]:focus ~ label {
-  color: #2ecc71;
+  color: grey;
   font-size: 12px;
   top: -10px;
 }
@@ -75,7 +75,7 @@ a[type="submit"] {
 }
 
 a[type="submit"]:hover {
-  background: #27ae60;
+  background: grey;
 }
 
 .google-sign-in-button {
@@ -86,7 +86,7 @@ a[type="submit"]:hover {
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  color: #2ecc71;
+  color: grey;
   cursor: pointer;
   text-align: center;
   transition: 0.2s;
@@ -101,12 +101,12 @@ a[type="submit"]:hover {
 }
 
 .forgot-password-button a {
-  color: #2ecc71;
+  color: grey;
   text-decoration: none;
   font-size: 16px;
   transition: 0.2s;
 }
 
 .forgot-password-button a:hover {
-  color: #27ae60;
+  color: grey;
 }
