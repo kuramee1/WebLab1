@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,199 +19,210 @@ body {
   padding: 2rem 1.25rem;
   width: 30rem;
   box-shadow: 0 4px 6px rgba(50, 50, 50, 0.1);
-
-  h1 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-  }
-
-  p {
-    margin-bottom: 2.5rem;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-
-    .form-field {
-      position: relative;
-      margin-bottom: 1rem;
-
-      input[type="text"],
-      input[type="email"],
-      input[type="password"] {
-        width: 100%;
-        background: transparent;
-        border: 1px solid lightgray;
-        border-radius: 4px;
-        padding: 0.75rem 1rem;
-        font-size: 1rem;
-
-        &:focus,
-        &:valid {
-          outline: none;
-          border-color: gray;
-
-          + label {
-            color: darkgray;
-          }
-
-          & ~ label {
-            color: darkgray;
-          }
-        }
-
-        &:valid {
-          color: gray;
-        }
-
-        &[type="password"] {
-          padding-right: 40px;
-
-          &::-ms-reveal {
-            display: none;
-          }
-
-          &::-ms-clear {
-            display: none;
-          }
-
-          & ~ label::after {
-            content: "\0000d7";
-            position: absolute;
-            top: 41%;
-            right: 15px;
-            color: gray;
-            transition: 0.25s;
-          }
-
-          &:focus ~ label::after,
-          &:valid ~ label::after {
-            color: gray;
-            top: 41%;
-          }
-
-          &:focus ~ label::before {
-            width: 0;
-          }
-
-          &:focus ~ label::after {
-            opacity: 1;
-            transform: translateX(5px);
-          }
-
-          &:valid ~ label::after {
-            opacity: 0;
-          }
-
-          &[type="password"] {
-            position: relative;
-
-            & ~ label::before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 100%;
-              height: 100%;
-              background: red;
-              pointer-events: none;
-              transition: border-color 0.25s;
-            }
-
-            & ~ label::before {
-              z-index: -1;
-            }
-
-            &:focus ~ label::before,
-            &:valid ~ label::before {
-              border-color: gray;
-            }
-          }
-        }
-
-        &::placeholder {
-          color: transparent;
-          transition: 0.2s ease;
-        }
-
-        &:focus::placeholder {
-          color: gray;
-        }
-      }
-
-      label {
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 0.75rem 0.25rem;
-        font-size: 1rem;
-        background: white;
-        color: #bbbbbb;
-        z-index: 2;
-        transition: all 0.2s;
-      }
-
-      label[for="password"]:before {
-        content: "";
-        position: absolute;
-        left: 36%;
-        top: 0%;
-        height: 85%;
-        width: 1px;
-        background: black;
-      }
-
-      label[for="password"]:after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: 40px;
-        background: white;
-        border-left: 1px solid lightgray;
-      }
-
-      &:first-of-type input[type="text"],
-      &:first-of-type input[type="email"] {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
-
-      &:last-of-type input[type="password"] {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-    }
-
-    a[type="submit"] {
-      width: 100%;
-      margin-top: 1rem;
-      background: gray;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      padding: 0.5rem;
-      cursor: pointer;
-
-      &:hover {
-        background: darkgray;
-      }
-
-      &:disabled {
-        cursor: not-allowed;
-        opacity: 0.5;
-      }
-    }
-  }
-
-  .login-link a {
-    color: gray;
-    text-decoration: none;
-
-    &:hover {
-      color: black;
-    }
-  }
 }
+.container h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.container p {
+  margin-bottom: 2.5rem;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+.container form .form-field {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.container form .form-field input[type=text],
+.container form .form-field input[type=email],
+.container form .form-field input[type=password] {
+  width: 100%;
+  background: transparent;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+.container form .form-field input[type=text]:focus, .container form .form-field input[type=text]:valid,
+.container form .form-field input[type=email]:focus,
+.container form .form-field input[type=email]:valid,
+.container form .form-field input[type=password]:focus,
+.container form .form-field input[type=password]:valid {
+  outline: none;
+  border-color: gray;
+}
+.container form .form-field input[type=text]:focus + label, .container form .form-field input[type=text]:valid + label,
+.container form .form-field input[type=email]:focus + label,
+.container form .form-field input[type=email]:valid + label,
+.container form .form-field input[type=password]:focus + label,
+.container form .form-field input[type=password]:valid + label {
+  color: darkgray;
+}
+.container form .form-field input[type=text]:focus ~ label, .container form .form-field input[type=text]:valid ~ label,
+.container form .form-field input[type=email]:focus ~ label,
+.container form .form-field input[type=email]:valid ~ label,
+.container form .form-field input[type=password]:focus ~ label,
+.container form .form-field input[type=password]:valid ~ label {
+  color: darkgray;
+}
+.container form .form-field input[type=text]:valid,
+.container form .form-field input[type=email]:valid,
+.container form .form-field input[type=password]:valid {
+  color: gray;
+}
+.container form .form-field input[type=text][type=password],
+.container form .form-field input[type=email][type=password],
+.container form .form-field input[type=password][type=password] {
+  padding-right: 40px;
+}
+.container form .form-field input[type=text][type=password]::-ms-reveal,
+.container form .form-field input[type=email][type=password]::-ms-reveal,
+.container form .form-field input[type=password][type=password]::-ms-reveal {
+  display: none;
+}
+.container form .form-field input[type=text][type=password]::-ms-clear,
+.container form .form-field input[type=email][type=password]::-ms-clear,
+.container form .form-field input[type=password][type=password]::-ms-clear {
+  display: none;
+}
+.container form .form-field input[type=text][type=password] ~ label::after,
+.container form .form-field input[type=email][type=password] ~ label::after,
+.container form .form-field input[type=password][type=password] ~ label::after {
+  content: "×";
+  position: absolute;
+  top: 41%;
+  right: 15px;
+  color: gray;
+  transition: 0.25s;
+}
+.container form .form-field input[type=text][type=password]:focus ~ label::after, .container form .form-field input[type=text][type=password]:valid ~ label::after,
+.container form .form-field input[type=email][type=password]:focus ~ label::after,
+.container form .form-field input[type=email][type=password]:valid ~ label::after,
+.container form .form-field input[type=password][type=password]:focus ~ label::after,
+.container form .form-field input[type=password][type=password]:valid ~ label::after {
+  color: gray;
+  top: 41%;
+}
+.container form .form-field input[type=text][type=password]:focus ~ label::before,
+.container form .form-field input[type=email][type=password]:focus ~ label::before,
+.container form .form-field input[type=password][type=password]:focus ~ label::before {
+  width: 0;
+}
+.container form .form-field input[type=text][type=password]:focus ~ label::after,
+.container form .form-field input[type=email][type=password]:focus ~ label::after,
+.container form .form-field input[type=password][type=password]:focus ~ label::after {
+  opacity: 1;
+  transform: translateX(5px);
+}
+.container form .form-field input[type=text][type=password]:valid ~ label::after,
+.container form .form-field input[type=email][type=password]:valid ~ label::after,
+.container form .form-field input[type=password][type=password]:valid ~ label::after {
+  opacity: 0;
+}
+.container form .form-field input[type=text][type=password][type=password],
+.container form .form-field input[type=email][type=password][type=password],
+.container form .form-field input[type=password][type=password][type=password] {
+  position: relative;
+}
+.container form .form-field input[type=text][type=password][type=password] ~ label::before,
+.container form .form-field input[type=email][type=password][type=password] ~ label::before,
+.container form .form-field input[type=password][type=password][type=password] ~ label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  pointer-events: none;
+  transition: border-color 0.25s;
+}
+.container form .form-field input[type=text][type=password][type=password] ~ label::before,
+.container form .form-field input[type=email][type=password][type=password] ~ label::before,
+.container form .form-field input[type=password][type=password][type=password] ~ label::before {
+  z-index: -1;
+}
+.container form .form-field input[type=text][type=password][type=password]:focus ~ label::before, .container form .form-field input[type=text][type=password][type=password]:valid ~ label::before,
+.container form .form-field input[type=email][type=password][type=password]:focus ~ label::before,
+.container form .form-field input[type=email][type=password][type=password]:valid ~ label::before,
+.container form .form-field input[type=password][type=password][type=password]:focus ~ label::before,
+.container form .form-field input[type=password][type=password][type=password]:valid ~ label::before {
+  border-color: gray;
+}
+.container form .form-field input[type=text]::placeholder,
+.container form .form-field input[type=email]::placeholder,
+.container form .form-field input[type=password]::placeholder {
+  color: transparent;
+  transition: 0.2s ease;
+}
+.container form .form-field input[type=text]:focus::placeholder,
+.container form .form-field input[type=email]:focus::placeholder,
+.container form .form-field input[type=password]:focus::placeholder {
+  color: gray;
+}
+.container form .form-field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.75rem 0.25rem;
+  font-size: 1rem;
+  background: white;
+  color: #bbbbbb;
+  z-index: 2;
+  transition: all 0.2s;
+}
+.container form .form-field label[for=password]:before {
+  content: "";
+  position: absolute;
+  left: 36%;
+  top: 0%;
+  height: 85%;
+  width: 1px;
+  background: black;
+}
+.container form .form-field label[for=password]:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  background: white;
+  border-left: 1px solid lightgray;
+}
+.container form .form-field:first-of-type input[type=text], .container form .form-field:first-of-type input[type=email] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.container form .form-field:last-of-type input[type=password] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.container form a[type=submit] {
+  width: 100%;
+  margin-top: 1rem;
+  background: gray;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.container form a[type=submit]:hover {
+  background: darkgray;
+}
+.container form a[type=submit]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.container .login-link a {
+  color: gray;
+  text-decoration: none;
+}
+.container .login-link a:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=sign-up.css.map */

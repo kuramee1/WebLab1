@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  form {
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: grey;
+      color: white;
+      border: none;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: grey;
+      }
+    }
+  }
+}
+
+.home-button {
+  background-color: grey;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: grey;
+  }
+}

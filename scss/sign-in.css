@@ -15,19 +15,16 @@ body {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
-
 .form-container h3 {
   text-align: center;
   margin-bottom: 30px;
 }
-
-.form-field {
+.form-container .form-field {
   position: relative;
   margin-bottom: 10px;
 }
-
-.form-field input[type="text"],
-.form-field input[type="password"] {
+.form-container .form-field input[type=text],
+.form-container .form-field input[type=password] {
   width: 90%;
   padding: 10px;
   border-radius: 5px;
@@ -35,8 +32,18 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
-
-.form-field label {
+.form-container .form-field input[type=text]:focus,
+.form-container .form-field input[type=password]:focus {
+  outline: none;
+  border: 1px solid grey;
+}
+.form-container .form-field input[type=text]:focus ~ label,
+.form-container .form-field input[type=password]:focus ~ label {
+  color: grey;
+  font-size: 12px;
+  top: -10px;
+}
+.form-container .form-field label {
   position: absolute;
   top: 0;
   left: 10px;
@@ -46,21 +53,7 @@ body {
   pointer-events: none;
   transition: 0.2s;
 }
-
-.form-field input[type="text"]:focus,
-.form-field input[type="password"]:focus {
-  outline: none;
-  border: 1px solid grey;
-}
-
-.form-field input[type="text"]:focus ~ label,
-.form-field input[type="password"]:focus ~ label {
-  color: grey;
-  font-size: 12px;
-  top: -10px;
-}
-
-a[type="submit"] {
+.form-container a[type=submit] {
   display: block;
   width: 90%;
   padding: 10px;
@@ -73,12 +66,10 @@ a[type="submit"] {
   margin-bottom: 10px;
   transition: 0.2s;
 }
-
-a[type="submit"]:hover {
+.form-container a[type=submit]:hover {
   background: grey;
 }
-
-.google-sign-in-button {
+.form-container .google-sign-in-button {
   display: block;
   width: 90%;
   padding: 10px;
@@ -91,22 +82,20 @@ a[type="submit"]:hover {
   text-align: center;
   transition: 0.2s;
 }
-
-.google-sign-in-button:hover {
+.form-container .google-sign-in-button:hover {
   background: #f1f1f1;
 }
-
-.forgot-password-button {
+.form-container .forgot-password-button {
   text-align: center;
 }
-
-.forgot-password-button a {
+.form-container .forgot-password-button a {
   color: grey;
   text-decoration: none;
   font-size: 16px;
   transition: 0.2s;
 }
-
-.forgot-password-button a:hover {
+.form-container .forgot-password-button a:hover {
   color: grey;
 }
+
+/*# sourceMappingURL=sign-in.css.map */

@@ -1,0 +1,110 @@
+body {
+  background: #ddd;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 300px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .form-field {
+    position: relative;
+    margin-bottom: 10px;
+
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      line-height: 1.5;
+
+      &:focus {
+        outline: none;
+        border: 1px solid grey;
+      }
+
+      &:focus ~ label {
+        color: grey;
+        font-size: 12px;
+        top: -10px;
+      }
+    }
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      background: #fff;
+      padding: 5px;
+      font-size: 16px;
+      pointer-events: none;
+      transition: 0.2s;
+    }
+  }
+
+  a[type="submit"] {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    background: gray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.2s;
+
+    &:hover {
+      background: grey;
+    }
+  }
+
+  .google-sign-in-button {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: grey;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+
+    &:hover {
+      background: #f1f1f1;
+    }
+  }
+
+  .forgot-password-button {
+    text-align: center;
+
+    a {
+      color: grey;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.2s;
+
+      &:hover {
+        color: grey;
+      }
+    }
+  }
+}
