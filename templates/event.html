@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/WebLab1/scss/event.css">
+    <title>Create Event</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Event</h1>
+        <form action="/submit-event" method="POST">
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="event-name" required>
+
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event-date" required>
+
+            <label for="event-location">Event Location:</label>
+            <input type="text" id="event-location" name="event-location" required>
+
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" name="event-description" rows="4" cols="50" required></textarea>
+
+            <button type="submit">Submit Event</button>
+        </form>
+    </div>
+</body>
+</html>
