@@ -26,7 +26,7 @@ header {
 }
 
 .event h2 {
-    color: #446cb3;
+    color: grey;
     margin-bottom: 0.5rem;
 }
 
@@ -35,7 +35,7 @@ header {
 }
 
 .event button {
-    background-color: #446cb3;
+    background-color: grey;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -44,14 +44,14 @@ header {
 }
 
 .event button:hover {
-    background-color: #3350a5;
+    background-color: grey;
     cursor: pointer;
 }
 
 .user-button,
 .logout-button,
 .create-event-button {
-    background-color: #446cb3;
+    background-color: grey;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -63,5 +63,5 @@ header {
 .user-button:hover,
 .logout-button:hover,
 .create-event-button:hover {
-    background-color: #3350a5;
+    background-color: grey;
 }
