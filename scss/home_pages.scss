@@ -23,29 +23,25 @@ header {
     margin: 1rem;
     padding: 1rem;
     width: calc(33% - 2rem);
-}
-
-.event h2 {
-    color: grey;
-    margin-bottom: 0.5rem;
-}
-
-.event p {
-    margin-bottom: 0.5rem;
-}
-
-.event button {
-    background-color: grey;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 0.5rem;
-    text-transform: uppercase;
-}
-
-.event button:hover {
-    background-color: grey;
-    cursor: pointer;
+    h2 {
+        color: grey;
+        margin-bottom: 0.5rem;
+    }
+    p {
+        margin-bottom: 0.5rem;
+    }
+    button {
+        background-color: grey;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        &:hover {
+            background-color: grey;
+            cursor: pointer;
+        }
+    }
 }
 
 .user-button,
@@ -58,10 +54,7 @@ header {
     padding: 0.5rem;
     text-transform: uppercase;
     cursor: pointer;
-}
-
-.user-button:hover,
-.logout-button:hover,
-.create-event-button:hover {
-    background-color: grey;
+    &:hover {
+        background-color: grey;
+    }
 }
