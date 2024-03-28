@@ -1,82 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-			background: #ddd;
-			height: 100vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.form-container {
-			width: 300px;
-			background: #fff;
-			padding: 20px;
-			box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-			border-radius: 5px;
-		}
-
-		.form-container h3 {
-			text-align: center;
-			margin-bottom: 30px;
-		}
-
-		.form-container input[type="text"], .form-container input[type="password"] {
-			display: block;
-			width: 100%;
-			margin-bottom: 10px;
-			padding: 10px;
-			border-radius: 5px;
-			border: 1px solid #ccc;
-			font-size: 16px;
-			line-height: 1.5;
-		}
-
-		.form-container button {
-			display: block;
-			width: 100%;
-			padding: 10px;
-			background: #2ecc71;
-			color: #fff;
-			border: none;
-			border-radius: 5px;
-			font-size: 16px;
-			cursor: pointer;
-			margin-bottom: 10px;
-		}
-
-		.form-container button:hover {
-			background: #27ae60;
-		}
-
-		.form-container a {
-			text-align: center;
-			display: block;
-			color: #2ecc71;
-			text-decoration: none;
-			font-size: 16px;
-		}
-
-		.form-container a:hover {
-			color: #27ae60;
-		}
-	</style>
+  <link rel="stylesheet" type="text/css" href="scss/sign-in.css" />
 </head>
 <body>
-	<div class="form-container">
-		<h3>Sign in or create an account</h3>
-		<form>
-			<input type="text" placeholder="Email">
-			<input type="password" placeholder="Password">
-			<button type="submit">Sign in</button>
-			<a href="#">G Sign in with Google</a>
-			<a href="#">Forgotten your password?</a>
-		</form>
-	</div>
+  <div class="form-container">
+    <h3>Sign in or create an account</h3>
+    <form>
+      <div class="form-field">
+        <input type="text" name="email" class="email-input" placeholder="Email" required />
+        <label for="email" class="email-label">Email</label>
+      </div>
+      <div class="form-field">
+        <input type="password" name="password" class="password-input" placeholder="Password" required />
+        <label for="password" class="password-label">Password</label>
+      </div>
+      <button type="submit" class="sign-in-button">Sign in</button>
+      <div class="google-sign-in-button">
+        G Sign in with Google
+      </div>
+      <div class="forgot-password-button">
+        <a href="#">Forgotten your password?</a>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
