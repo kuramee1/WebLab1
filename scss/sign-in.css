@@ -60,11 +60,11 @@ body {
   top: -10px;
 }
 
-button[type="submit"] {
+a[type="submit"] {
   display: block;
   width: 100%;
   padding: 10px;
-  background: #2ecc71;
+  background: gray;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -74,7 +74,7 @@ button[type="submit"] {
   transition: 0.2s;
 }
 
-button[type="submit"]:hover {
+a[type="submit"]:hover {
   background: #27ae60;
 }
 

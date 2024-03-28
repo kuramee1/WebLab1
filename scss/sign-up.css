@@ -184,7 +184,7 @@ body {
       }
     }
 
-    button[type="submit"] {
+    a[type="submit"] {
       width: 100%;
       margin-top: 1rem;
       background: gray;
