@@ -1,9 +1,182 @@
-<mxfile host="app.diagrams.net" modified="2024-06-10T09:29:57.938Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" version="24.5.2" etag="qAIteEBRuN_eAgfZdQTh" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-10T09:57:50.377Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="R7o7P8ZKeGeAM1bx6s96" version="24.5.2" type="github">
   <diagram name="Сторінка-1" id="9Ck-yNo4RunUvWhTlLMb">
-    <mxGraphModel>
+    <mxGraphModel dx="747" dy="407" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-1" value="Користувач" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-2" value="Поштовий клієнт" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-4" value="Список контактів" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="165" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-6" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=0;dashed=1;" edge="1" parent="1" source="5mE4xlkqEJ8ADKnat9V5-1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="400" y="360" as="sourcePoint" />
+            <mxPoint x="100" y="710" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-7" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="269.33000000000004" y="220" as="sourcePoint" />
+            <mxPoint x="269.33000000000004" y="710" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-11" value="" style="whiteSpace=wrap;html=1;fillColor=#e6e6e6;" vertex="1" parent="1">
+          <mxGeometry x="255" y="260" width="30" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-13" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="5mE4xlkqEJ8ADKnat9V5-11">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="100" y="260" as="sourcePoint" />
+            <mxPoint x="180" y="260" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-32" value="Виконує функцію редагування" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5mE4xlkqEJ8ADKnat9V5-13">
+          <mxGeometry x="-0.2697" y="-1" relative="1" as="geometry">
+            <mxPoint x="13" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-14" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="100" y="360" as="sourcePoint" />
+            <mxPoint x="255" y="360" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-40" value="Вибір функції Список клієнтів" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5mE4xlkqEJ8ADKnat9V5-14">
+          <mxGeometry x="0.2077" relative="1" as="geometry">
+            <mxPoint x="-14" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-16" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="5mE4xlkqEJ8ADKnat9V5-31">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="285" y="380" as="sourcePoint" />
+            <mxPoint x="570" y="380" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-34" value="Виконує функцію отримання списку контактів" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5mE4xlkqEJ8ADKnat9V5-16">
+          <mxGeometry x="0.6119" y="-1" relative="1" as="geometry">
+            <mxPoint x="-28" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-17" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="100" y="450" as="sourcePoint" />
+            <mxPoint x="255" y="450" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-43" value="Вибір функції видалити" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5mE4xlkqEJ8ADKnat9V5-17">
+          <mxGeometry x="0.1045" y="2" relative="1" as="geometry">
+            <mxPoint x="-6" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-19" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="250" y="310" as="sourcePoint" />
+            <mxPoint x="100" y="310" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-39" value="Перехід до редагування" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5mE4xlkqEJ8ADKnat9V5-19">
+          <mxGeometry x="0.072" y="-1" relative="1" as="geometry">
+            <mxPoint y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-21" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;dashed=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5mE4xlkqEJ8ADKnat9V5-31">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="570" y="410" as="sourcePoint" />
+            <mxPoint x="285" y="410" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-41" value="Повернення списку" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5mE4xlkqEJ8ADKnat9V5-21">
+          <mxGeometry x="0.5537" y="-2" relative="1" as="geometry">
+            <mxPoint x="44" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-22" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="255" y="430" as="sourcePoint" />
+            <mxPoint x="100" y="430" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-42" value="Отримання списку" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5mE4xlkqEJ8ADKnat9V5-22">
+          <mxGeometry x="0.2181" y="-1" relative="1" as="geometry">
+            <mxPoint x="9" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-23" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;dashed=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="5mE4xlkqEJ8ADKnat9V5-28">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="720" y="500" as="sourcePoint" />
+            <mxPoint x="285" y="500" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-36" value="Видалення контакту" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5mE4xlkqEJ8ADKnat9V5-23">
+          <mxGeometry x="-0.5062" y="2" relative="1" as="geometry">
+            <mxPoint x="-34" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-24" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="255" y="510" as="sourcePoint" />
+            <mxPoint x="100" y="510" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-44" value="Видалений контакт&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5mE4xlkqEJ8ADKnat9V5-24">
+          <mxGeometry x="0.0632" y="2" relative="1" as="geometry">
+            <mxPoint y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-27" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=0;dashed=1;" edge="1" parent="1" source="5mE4xlkqEJ8ADKnat9V5-28">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="439.5" y="215" as="sourcePoint" />
+            <mxPoint x="440.16999999999996" y="710" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-29" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="5mE4xlkqEJ8ADKnat9V5-28">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="285" y="470" as="sourcePoint" />
+            <mxPoint x="720" y="470" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-35" value="Виконання функції Видалити контакт" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5mE4xlkqEJ8ADKnat9V5-29">
+          <mxGeometry x="0.4994" y="-3" relative="1" as="geometry">
+            <mxPoint x="-34" y="-25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-45" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=0;dashed=1;" edge="1" parent="1" target="5mE4xlkqEJ8ADKnat9V5-31">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="439.5" y="215" as="sourcePoint" />
+            <mxPoint x="440.16999999999996" y="710" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-31" value="" style="whiteSpace=wrap;html=1;fillColor=#e6e6e6;" vertex="1" parent="1">
+          <mxGeometry x="425" y="370" width="30" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-46" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=0;dashed=1;" edge="1" parent="1" source="5mE4xlkqEJ8ADKnat9V5-31" target="5mE4xlkqEJ8ADKnat9V5-28">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="440" y="410" as="sourcePoint" />
+            <mxPoint x="440.16999999999996" y="710" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mE4xlkqEJ8ADKnat9V5-28" value="" style="whiteSpace=wrap;html=1;fillColor=#e6e6e6;" vertex="1" parent="1">
+          <mxGeometry x="430" y="460" width="30" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
